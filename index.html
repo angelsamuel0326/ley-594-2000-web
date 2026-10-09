@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ley 594 de 2000, Ley General de Archivos</title>
+<meta name="description" content="Texto de la Ley 594 de 2000 de Colombia (Ley General de Archivos): lectura completa, índice por títulos, buscador, páginas por artículo, fuentes y vigencia.">
+<meta name="theme-color" content="#EDE3D3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#231819" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23A8545F'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23FBF7EF' stroke-width='1.5'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-style='italic' fill='%23FBF7EF'%3E594%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Sans:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  /* Aplica el tema guardado antes de pintar, para evitar el parpadeo. */
+  try { var t = localStorage.getItem("ley594-tema"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<button type="button" id="skip" class="skip">Saltar al contenido</button>
+
+<div class="topbar-in">
+    <button type="button" id="toc-toggle" class="btn icon-btn toc-toggle" aria-controls="toc" aria-expanded="false">
+      <span aria-hidden="true" class="burger"></span><span>Índice</span>
+    </button>
+    <a class="brand" href="#inicio" data-go="inicio" aria-label="Ley 594 de 2000, inicio">
+      <span class="brand-text">
+        <span class="brand-name">Ley General de Archivos</span>
+        <span class="brand-code">Ley 594 de 2000</span>
+      </span>
+    </a>
+    <nav class="mainnav" aria-label="Secciones">
+      <a href="#ley" data-nav="reader">Lector</a>
+      <a href="#buscar" data-nav="search">Buscar</a>
+      <a href="#info" data-nav="info">Información jurídica</a>
+      <div class="nav-drop" id="nav-drop">
+        <button type="button" id="otros-btn" class="nav-drop-btn" aria-expanded="false" aria-controls="otros-menu">
+          <span>Otros temas</span><span class="chev" aria-hidden="true"></span>
+        </button>
+        <ul id="otros-menu" class="nav-menu" aria-label="Otros temas" hidden></ul>
+      </div>
+    </nav>
+    <form id="search-form" class="searchbox" role="search" autocomplete="off">
+      <label for="q" class="sr">Buscar en la ley</label>
+      <input id="q" class="input" type="search" placeholder="Artículo, palabra o frase (tecla /)" role="combobox" aria-expanded="false" aria-controls="suggest" aria-autocomplete="list" enterkeyhint="search">
+      <ul id="suggest" class="suggest" role="listbox" aria-label="Sugerencias" hidden></ul>
+    </form>
+    <button type="button" id="theme-toggle" class="btn icon-btn" aria-pressed="false">
+      <span aria-hidden="true" class="theme-dot"></span><span class="theme-label">Oscuro</span>
+    </button>
+  </div>
+<div class="shell">
+  <aside id="toc" class="toc" aria-label="Índice de la ley"></aside>
+  <div id="drawer-scrim" class="scrim" aria-hidden="true"></div>
+  <main id="view" class="view" aria-live="polite"></main>
+</div>
+
+<footer class="sitefoot" id="sitefoot"></footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:1rem">Este sitio necesita JavaScript para mostrar la ley.</p></noscript>
+
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/components.js"></script>
+<script src="js/otros.js"></script>
+<script src="js/app.js"></script>
+
+
+</body></html>
